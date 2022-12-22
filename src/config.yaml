@@ -63,7 +63,7 @@ options:
 
   tag-list:
     type: string
-    default: "juju"
+    default: ""
     description: "Deployment only config. Comma separated Tag list for this runner. E.g. juju,docker"
 
   https_proxy:
@@ -75,3 +75,8 @@ options:
     type: string
     default: ""
     description: "A http proxy url E.g. http://proxy.example.com:8080/"
+
+  docker-tmpfs:
+    type: string
+    default: ""
+    description: "Configuration for docker executor temporary file system. Path and config separated by a :. Example: /scratch:rw,exec,size=1g"
